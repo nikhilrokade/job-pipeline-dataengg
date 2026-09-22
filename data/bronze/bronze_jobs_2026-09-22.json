@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_pipeline": "job_market_bronze_ingestion",
-    "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+    "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
     "record_count": 28,
     "companies_scanned": [
       "gitlab",
@@ -22,7 +22,7 @@
       "dedup_fingerprint": "682b77edff596a90c13c654ad3164fe2151d7ca737aa01f9a873389292d46da1",
       "company_board": "canonical",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/5667860",
         "data_compliance": [
@@ -130,7 +130,7 @@
       "dedup_fingerprint": "8295a5ff89db948cc1e943a1331a660664c2a503fcb2e9f2ff57120b99904978",
       "company_board": "canonical",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/3014391",
         "data_compliance": [
@@ -241,7 +241,7 @@
       "dedup_fingerprint": "0d2964b0820b980342bae95da537c5fc1be977a06c1a02847fabdbbc2891c45d",
       "company_board": "canonical",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/5218601",
         "data_compliance": [
@@ -352,7 +352,7 @@
       "dedup_fingerprint": "3f6deef8faa4fc2317142f4607900ae98b8c6f72ae63d1deb6809f0a27cfc626",
       "company_board": "canonical",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/5002072",
         "data_compliance": [
@@ -463,7 +463,7 @@
       "dedup_fingerprint": "c69912eb89068cfcc269d17e2908cf696e0fb122a1b743dc690113230992c1cc",
       "company_board": "cloudflare",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
         "data_compliance": [
@@ -523,7 +523,7 @@
       "dedup_fingerprint": "93e9e48f8f7f9b72d063e51e4722ea84d25fc88fd90ee4633448b4e8e9343737",
       "company_board": "cloudflare",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
         "data_compliance": [
@@ -578,62 +578,7 @@
       "dedup_fingerprint": "ecaef4158c9b97e8db65555276dd372b8b8049b1a0c4b155bf7b454a75caf087",
       "company_board": "cloudflare",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
-      "raw_payload": {
-        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8055118?gh_jid=8055118",
-        "data_compliance": [
-          {
-            "type": "gdpr",
-            "requires_consent": false,
-            "requires_processing_consent": false,
-            "requires_retention_consent": false,
-            "retention_period": null,
-            "demographic_data_consent_applies": false
-          }
-        ],
-        "internal_job_id": 3491097,
-        "location": {
-          "name": "In-Office"
-        },
-        "metadata": [
-          {
-            "id": 825338,
-            "name": "Cost Center",
-            "value": "4900 - Business Intelligence - R&D",
-            "value_type": "single_select"
-          },
-          {
-            "id": 8654220,
-            "name": "Job Posting Location",
-            "value": [
-              "Austin, US"
-            ],
-            "value_type": "multi_select"
-          },
-          {
-            "id": 46546702,
-            "name": "Career Site Department",
-            "value": [
-              "Data Intelligence and Analytics"
-            ],
-            "value_type": "multi_select"
-          }
-        ],
-        "id": 8055118,
-        "updated_at": "2026-09-04T10:59:17-04:00",
-        "requisition_id": null,
-        "title": "Senior Data Engineer",
-        "company_name": "Cloudflare",
-        "first_published": "2026-07-14T10:54:05-04:00",
-        "language": "en",
-        "application_deadline": null
-      }
-    },
-    {
-      "dedup_fingerprint": "ecaef4158c9b97e8db65555276dd372b8b8049b1a0c4b155bf7b454a75caf087",
-      "company_board": "cloudflare",
-      "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8007032?gh_jid=8007032",
         "data_compliance": [
@@ -685,10 +630,65 @@
       }
     },
     {
+      "dedup_fingerprint": "ecaef4158c9b97e8db65555276dd372b8b8049b1a0c4b155bf7b454a75caf087",
+      "company_board": "cloudflare",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
+      "raw_payload": {
+        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8055118?gh_jid=8055118",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3491097,
+        "location": {
+          "name": "In-Office"
+        },
+        "metadata": [
+          {
+            "id": 825338,
+            "name": "Cost Center",
+            "value": "4900 - Business Intelligence - R&D",
+            "value_type": "single_select"
+          },
+          {
+            "id": 8654220,
+            "name": "Job Posting Location",
+            "value": [
+              "Austin, US"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 46546702,
+            "name": "Career Site Department",
+            "value": [
+              "Data Intelligence and Analytics"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8055118,
+        "updated_at": "2026-09-04T10:59:17-04:00",
+        "requisition_id": null,
+        "title": "Senior Data Engineer",
+        "company_name": "Cloudflare",
+        "first_published": "2026-07-14T10:54:05-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
       "dedup_fingerprint": "d94a9cadd5d76bd76280735eb51d207ab90af1235f85949584ba04c050adc574",
       "company_board": "cloudflare",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8030240?gh_jid=8030240",
         "data_compliance": [
@@ -747,7 +747,7 @@
       "dedup_fingerprint": "120c3b960f9d61a55f3159b355b7eb89d5fcfd175d23f7d68630b34b0eb24310",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8290810002",
         "data_compliance": [
@@ -794,7 +794,7 @@
       "dedup_fingerprint": "06a59ee9f00141e30e8c2e2c3361d908f9e587ab64d39ce2c9e8c949292635a4",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8638849002",
         "data_compliance": [
@@ -841,7 +841,7 @@
       "dedup_fingerprint": "4c9d97c312bf3466b5103518afafa80f517de3555f8cf99b04687e69f9b44609",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8407895002",
         "data_compliance": [
@@ -888,7 +888,7 @@
       "dedup_fingerprint": "d517d202fdaece3c2f5c38c9a07045586b664bb1c608268363e032c7f89b799d",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7601580002",
         "data_compliance": [
@@ -935,7 +935,7 @@
       "dedup_fingerprint": "edab3d8b52fe8cdc0fd2878c8b4bccb14abac910b8816e8747a7ccff81b88bcf",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7647369002",
         "data_compliance": [
@@ -982,7 +982,7 @@
       "dedup_fingerprint": "8018bbea2b78981c0a30c00bae2e9024dbdfd79f901fa87ad1b8cd8c7140adc3",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8761732002",
         "data_compliance": [
@@ -1029,7 +1029,7 @@
       "dedup_fingerprint": "52afc6866844330d56db4142e93834580f4f3c64aff7631bbea01695073e071b",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8692962002",
         "data_compliance": [
@@ -1076,7 +1076,7 @@
       "dedup_fingerprint": "5d9e342ce0e6063554f4702dde7a730ea9cd5cbeec17f7747d5a7ed06c4a3f46",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6322654002",
         "data_compliance": [
@@ -1123,7 +1123,7 @@
       "dedup_fingerprint": "c30cf9a7cd8037c2a551b93562f04e37be75c8600fc68d84b16979165c1e2a5f",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7601572002",
         "data_compliance": [
@@ -1170,7 +1170,7 @@
       "dedup_fingerprint": "c7494b3ce771ead6cfaa6a0eda5d0d9b62f6bf276cb0dc0e7f711dd7f1092be2",
       "company_board": "databricks",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7652016002",
         "data_compliance": [
@@ -1217,7 +1217,7 @@
       "dedup_fingerprint": "76d57d444c05bdbe0f11487eb210efd14cfa1554c2c5eb5236479d338a6c61d9",
       "company_board": "airbnb",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://careers.airbnb.com/positions/7998356?gh_jid=7998356",
         "data_compliance": [
@@ -1262,7 +1262,7 @@
       "dedup_fingerprint": "13ccdd16f8c767398c4a3f0b2a616327990f200af26459f69509468466732bf4",
       "company_board": "stripe",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://stripe.com/jobs/search?gh_jid=8113687",
         "data_compliance": [
@@ -1295,7 +1295,7 @@
       "dedup_fingerprint": "d6a12c68fccf12758c8d3c542330cc76dc176f1c0ffe088836aae21ca2a3ab67",
       "company_board": "stripe",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://stripe.com/jobs/search?gh_jid=7761694",
         "data_compliance": [
@@ -1328,7 +1328,7 @@
       "dedup_fingerprint": "8d7027ffc376520d616a1913721599805601924d2c8ea85b6e13061144c0f0b5",
       "company_board": "stripe",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://stripe.com/jobs/search?gh_jid=8209970",
         "data_compliance": [
@@ -1361,7 +1361,7 @@
       "dedup_fingerprint": "2d147e45da4779c461db3645ab89d11b62ee53993d8de9ed43dc90f1bb36854a",
       "company_board": "stripe",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://stripe.com/jobs/search?gh_jid=8112043",
         "data_compliance": [
@@ -1394,7 +1394,7 @@
       "dedup_fingerprint": "63f4d91c668b710b5ed175d0372056051e641b77a5b4f354cddae6f3f2064387",
       "company_board": "pinterest",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7683981",
         "data_compliance": [
@@ -1447,7 +1447,7 @@
       "dedup_fingerprint": "2c537138e6c7acba5d60c10b77ab5c2b0c0a105c72f496bc30b0bd793aaad6a4",
       "company_board": "pinterest",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7782546",
         "data_compliance": [
@@ -1501,7 +1501,7 @@
       "dedup_fingerprint": "b2763fad6a7ab6c6876d10ad90002d97477f164039a83edcc4489ce806a99a40",
       "company_board": "pinterest",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7494956",
         "data_compliance": [
@@ -1554,7 +1554,7 @@
       "dedup_fingerprint": "d6891cc42ab413270a46f540328587330e70250f8547300bc16350a35f5abb23",
       "company_board": "pinterest",
       "source": "greenhouse_public_ats",
-      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "ingested_at_utc": "2026-09-22T17:01:24.660945+00:00",
       "raw_payload": {
         "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7642253",
         "data_compliance": [
