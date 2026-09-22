@@ -1,0 +1,19 @@
+cat << 'EOF' > .gitignore
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Environment variables & secrets
+.env
+*.env
+
+# Lakehouse Delta Storage (managed in Databricks/Storage, not Git)
+data/silver/
+data/gold/
+EOF

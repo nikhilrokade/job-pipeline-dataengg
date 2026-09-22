@@ -1,0 +1,1608 @@
+{
+  "metadata": {
+    "source_pipeline": "job_market_bronze_ingestion",
+    "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+    "record_count": 28,
+    "companies_scanned": [
+      "gitlab",
+      "canonical",
+      "elastic",
+      "cloudflare",
+      "databricks",
+      "airbnb",
+      "stripe",
+      "reddit",
+      "pinterest",
+      "cockroachlabs",
+      "mongodb"
+    ]
+  },
+  "records": [
+    {
+      "dedup_fingerprint": "682b77edff596a90c13c654ad3164fe2151d7ca737aa01f9a873389292d46da1",
+      "company_board": "canonical",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/5667860",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_optional",
+        "internal_job_id": 2483816,
+        "location": {
+          "name": "Home based - Worldwide"
+        },
+        "metadata": [
+          {
+            "id": 186225,
+            "name": "People management responsibilities?",
+            "value": true,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 149021,
+            "name": "Employment Length",
+            "value": "Permanent",
+            "value_type": "single_select"
+          },
+          {
+            "id": 675557,
+            "name": "Core skills",
+            "value": [
+              "Helper",
+              "Leader",
+              "Manager",
+              "Organiser",
+              "Problem Solver"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739136,
+            "name": "External Departments (website)",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739137,
+            "name": "One line job description",
+            "value": "Lead an engineering team focused on building and operating data platforms on Kubernetes and bare-metal.",
+            "value_type": "long_text"
+          },
+          {
+            "id": 3209541,
+            "name": "Canonical site",
+            "value": [],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 3587161,
+            "name": "LinkedIn Posting Level",
+            "value": "Mid-Senior",
+            "value_type": "single_select"
+          },
+          {
+            "id": 11961371,
+            "name": "Featured job (Talent Team to complete)",
+            "value": null,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 54742858,
+            "name": "Business Unit Type",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 54743567,
+            "name": "Req Category",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 56835606,
+            "name": "Discipline/Track",
+            "value": null,
+            "value_type": "single_select"
+          }
+        ],
+        "id": 5667860,
+        "updated_at": "2026-08-05T18:23:33-04:00",
+        "requisition_id": "1031",
+        "title": "Engineering Manager - Data Platform",
+        "company_name": "Canonical",
+        "first_published": "2024-02-02T05:16:33-05:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "8295a5ff89db948cc1e943a1331a660664c2a503fcb2e9f2ff57120b99904978",
+      "company_board": "canonical",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/3014391",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_optional",
+        "internal_job_id": 1767253,
+        "location": {
+          "name": "Home based - EMEA"
+        },
+        "metadata": [
+          {
+            "id": 186225,
+            "name": "People management responsibilities?",
+            "value": false,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 149021,
+            "name": "Employment Length",
+            "value": "Full-time",
+            "value_type": "single_select"
+          },
+          {
+            "id": 675557,
+            "name": "Core skills",
+            "value": [
+              "Analysers",
+              "Contributor",
+              "Developer",
+              "Doer",
+              "Fixer",
+              "Problem Solver",
+              "Scientist",
+              "Technologist"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739136,
+            "name": "External Departments (website)",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739137,
+            "name": "One line job description",
+            "value": "Deliver a world-leading data platform - from data lake and big data technology, through NoSQL to high performance SQL databases, using the latest capabilities of Kubernetes and Linux.",
+            "value_type": "long_text"
+          },
+          {
+            "id": 3209541,
+            "name": "Canonical site",
+            "value": [],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 3587161,
+            "name": "LinkedIn Posting Level",
+            "value": "Mid-Senior",
+            "value_type": "single_select"
+          },
+          {
+            "id": 11961371,
+            "name": "Featured job (Talent Team to complete)",
+            "value": null,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 54742858,
+            "name": "Business Unit Type",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 54743567,
+            "name": "Req Category",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 56835606,
+            "name": "Discipline/Track",
+            "value": null,
+            "value_type": "single_select"
+          }
+        ],
+        "id": 3014391,
+        "updated_at": "2026-08-05T18:23:33-04:00",
+        "requisition_id": "666",
+        "title": "Software Engineer - Data Infrastructure ",
+        "company_name": "Canonical",
+        "first_published": "2021-05-12T21:12:03-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "0d2964b0820b980342bae95da537c5fc1be977a06c1a02847fabdbbc2891c45d",
+      "company_board": "canonical",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/5218601",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_optional",
+        "internal_job_id": 1767253,
+        "location": {
+          "name": "Home based - EMEA"
+        },
+        "metadata": [
+          {
+            "id": 186225,
+            "name": "People management responsibilities?",
+            "value": false,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 149021,
+            "name": "Employment Length",
+            "value": "Full-time",
+            "value_type": "single_select"
+          },
+          {
+            "id": 675557,
+            "name": "Core skills",
+            "value": [
+              "Analysers",
+              "Contributor",
+              "Developer",
+              "Doer",
+              "Fixer",
+              "Problem Solver",
+              "Scientist",
+              "Technologist"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739136,
+            "name": "External Departments (website)",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739137,
+            "name": "One line job description",
+            "value": "Deliver a world-leading data platform - from data lake and big data technology, through NoSQL to high performance SQL databases, using the latest capabilities of Kubernetes and Linux.",
+            "value_type": "long_text"
+          },
+          {
+            "id": 3209541,
+            "name": "Canonical site",
+            "value": [],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 3587161,
+            "name": "LinkedIn Posting Level",
+            "value": "Mid-Senior",
+            "value_type": "single_select"
+          },
+          {
+            "id": 11961371,
+            "name": "Featured job (Talent Team to complete)",
+            "value": null,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 54742858,
+            "name": "Business Unit Type",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 54743567,
+            "name": "Req Category",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 56835606,
+            "name": "Discipline/Track",
+            "value": null,
+            "value_type": "single_select"
+          }
+        ],
+        "id": 5218601,
+        "updated_at": "2026-08-05T18:23:33-04:00",
+        "requisition_id": "666",
+        "title": "Software Engineer - Data Infrastructure - Kafka",
+        "company_name": "Canonical",
+        "first_published": "2023-07-24T09:53:22-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "3f6deef8faa4fc2317142f4607900ae98b8c6f72ae63d1deb6809f0a27cfc626",
+      "company_board": "canonical",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://job-boards.greenhouse.io/canonical/jobs/5002072",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_optional",
+        "internal_job_id": 1767253,
+        "location": {
+          "name": "Home based - EMEA"
+        },
+        "metadata": [
+          {
+            "id": 186225,
+            "name": "People management responsibilities?",
+            "value": false,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 149021,
+            "name": "Employment Length",
+            "value": "Full-time",
+            "value_type": "single_select"
+          },
+          {
+            "id": 675557,
+            "name": "Core skills",
+            "value": [
+              "Analysers",
+              "Contributor",
+              "Developer",
+              "Doer",
+              "Fixer",
+              "Problem Solver",
+              "Scientist",
+              "Technologist"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739136,
+            "name": "External Departments (website)",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 2739137,
+            "name": "One line job description",
+            "value": "Deliver a world-leading data platform - from data lake and big data technology, through NoSQL to high performance SQL databases, using the latest capabilities of Kubernetes and Linux.",
+            "value_type": "long_text"
+          },
+          {
+            "id": 3209541,
+            "name": "Canonical site",
+            "value": [],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 3587161,
+            "name": "LinkedIn Posting Level",
+            "value": "Mid-Senior",
+            "value_type": "single_select"
+          },
+          {
+            "id": 11961371,
+            "name": "Featured job (Talent Team to complete)",
+            "value": null,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 54742858,
+            "name": "Business Unit Type",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 54743567,
+            "name": "Req Category",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 56835606,
+            "name": "Discipline/Track",
+            "value": null,
+            "value_type": "single_select"
+          }
+        ],
+        "id": 5002072,
+        "updated_at": "2026-08-05T18:23:33-04:00",
+        "requisition_id": "666",
+        "title": "Software Engineer - Data Infrastructure - OpenSearch/ElasticSearch",
+        "company_name": "Canonical",
+        "first_published": "2023-04-20T08:20:19-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "c69912eb89068cfcc269d17e2908cf696e0fb122a1b743dc690113230992c1cc",
+      "company_board": "cloudflare",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/7462801?gh_jid=7462801",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3315981,
+        "location": {
+          "name": "Hybrid"
+        },
+        "metadata": [
+          {
+            "id": 825338,
+            "name": "Cost Center",
+            "value": "4310 - Platform Engineering",
+            "value_type": "single_select"
+          },
+          {
+            "id": 8654220,
+            "name": "Job Posting Location",
+            "value": [
+              "Atlanta, US",
+              "Austin, US",
+              "Denver, US",
+              "Lisbon, Portugal",
+              "Seattle, US",
+              "Washington DC, US"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 46546702,
+            "name": "Career Site Department",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7462801,
+        "updated_at": "2026-09-16T09:11:29-04:00",
+        "requisition_id": "834",
+        "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)",
+        "company_name": "Cloudflare",
+        "first_published": "2026-01-22T11:50:06-05:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "93e9e48f8f7f9b72d063e51e4722ea84d25fc88fd90ee4633448b4e8e9343737",
+      "company_board": "cloudflare",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3490913,
+        "location": {
+          "name": "Hybrid"
+        },
+        "metadata": [
+          {
+            "id": 825338,
+            "name": "Cost Center",
+            "value": "5430 - Developer GTM",
+            "value_type": "single_select"
+          },
+          {
+            "id": 8654220,
+            "name": "Job Posting Location",
+            "value": [
+              "Austin, US"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 46546702,
+            "name": "Career Site Department",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8054669,
+        "updated_at": "2026-09-04T10:59:17-04:00",
+        "requisition_id": "22454",
+        "title": "Principal Engineer - GTM Data Platform",
+        "company_name": "Cloudflare",
+        "first_published": "2026-07-22T14:48:23-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "ecaef4158c9b97e8db65555276dd372b8b8049b1a0c4b155bf7b454a75caf087",
+      "company_board": "cloudflare",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8055118?gh_jid=8055118",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3491097,
+        "location": {
+          "name": "In-Office"
+        },
+        "metadata": [
+          {
+            "id": 825338,
+            "name": "Cost Center",
+            "value": "4900 - Business Intelligence - R&D",
+            "value_type": "single_select"
+          },
+          {
+            "id": 8654220,
+            "name": "Job Posting Location",
+            "value": [
+              "Austin, US"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 46546702,
+            "name": "Career Site Department",
+            "value": [
+              "Data Intelligence and Analytics"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8055118,
+        "updated_at": "2026-09-04T10:59:17-04:00",
+        "requisition_id": null,
+        "title": "Senior Data Engineer",
+        "company_name": "Cloudflare",
+        "first_published": "2026-07-14T10:54:05-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "ecaef4158c9b97e8db65555276dd372b8b8049b1a0c4b155bf7b454a75caf087",
+      "company_board": "cloudflare",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8007032?gh_jid=8007032",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3471766,
+        "location": {
+          "name": "In-Office"
+        },
+        "metadata": [
+          {
+            "id": 825338,
+            "name": "Cost Center",
+            "value": "4900 - Business Intelligence - R&D",
+            "value_type": "single_select"
+          },
+          {
+            "id": 8654220,
+            "name": "Job Posting Location",
+            "value": [
+              "Bengaluru, India"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 46546702,
+            "name": "Career Site Department",
+            "value": [
+              "Data Intelligence and Analytics"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8007032,
+        "updated_at": "2026-09-04T10:59:17-04:00",
+        "requisition_id": null,
+        "title": "Senior Data Engineer",
+        "company_name": "Cloudflare",
+        "first_published": "2026-06-19T01:40:45-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "d94a9cadd5d76bd76280735eb51d207ab90af1235f85949584ba04c050adc574",
+      "company_board": "cloudflare",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://boards.greenhouse.io/cloudflare/jobs/8030240?gh_jid=8030240",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_optional",
+        "internal_job_id": 3481168,
+        "location": {
+          "name": "In-Office"
+        },
+        "metadata": [
+          {
+            "id": 825338,
+            "name": "Cost Center",
+            "value": "4330 - Developer Engineering",
+            "value_type": "single_select"
+          },
+          {
+            "id": 8654220,
+            "name": "Job Posting Location",
+            "value": [
+              "Austin, US",
+              "London, UK",
+              "Seattle, US"
+            ],
+            "value_type": "multi_select"
+          },
+          {
+            "id": 46546702,
+            "name": "Career Site Department",
+            "value": [
+              "Emerging Technology & Incubation",
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8030240,
+        "updated_at": "2026-09-04T10:59:17-04:00",
+        "requisition_id": "898",
+        "title": "Senior Systems Engineer, Cloudflare Data Platform",
+        "company_name": "Cloudflare",
+        "first_published": "2026-06-30T13:50:32-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "120c3b960f9d61a55f3159b355b7eb89d5fcfd175d23f7d68630b34b0eb24310",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8290810002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6307311002,
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks India Private Limited",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8290810002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "P-1490",
+        "title": "Director of Engineering (Data Infrastructure)",
+        "company_name": "Databricks",
+        "first_published": "2025-11-13T17:13:22-05:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "06a59ee9f00141e30e8c2e2c3361d908f9e587ab64d39ce2c9e8c949292635a4",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8638849002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6450224002,
+        "location": {
+          "name": "Belgrade, Serbia"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks doo Beograd",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Operations"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8638849002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "SLSQ327R638",
+        "title": "Senior Go-To-Market (GTM) Analytics Engineer (AI & Pipelines)",
+        "company_name": "Databricks",
+        "first_published": "2026-08-03T11:18:49-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "4c9d97c312bf3466b5103518afafa80f517de3555f8cf99b04687e69f9b44609",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8407895002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6356439002,
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks India Private Limited",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Customer Success"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8407895002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "CSQ127R179",
+        "title": "Senior Manager - Technical Solutions (Big Data / AI)",
+        "company_name": "Databricks",
+        "first_published": "2026-02-18T12:27:40-05:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "d517d202fdaece3c2f5c38c9a07045586b664bb1c608268363e032c7f89b799d",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7601580002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 5535764002,
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks India Private Limited",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7601580002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "P-926",
+        "title": "Senior Software Engineer - Data Platform",
+        "company_name": "Databricks",
+        "first_published": "2024-08-19T05:47:23-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "edab3d8b52fe8cdc0fd2878c8b4bccb14abac910b8816e8747a7ccff81b88bcf",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7647369002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6008256002,
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks India Private Limited",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7647369002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "P-1348",
+        "title": "Senior Software Engineer (Data Platform)",
+        "company_name": "Databricks",
+        "first_published": "2024-09-23T05:35:11-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "8018bbea2b78981c0a30c00bae2e9024dbdfd79f901fa87ad1b8cd8c7140adc3",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8761732002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6504876002,
+        "location": {
+          "name": "United States"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks, Inc.",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Field Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8761732002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "FEQ227R367",
+        "title": "Specialist Solutions Architect - Data Engineering & Warehousing (Digital Native Business) ",
+        "company_name": "Databricks",
+        "first_published": "2026-09-01T23:42:39-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "52afc6866844330d56db4142e93834580f4f3c64aff7631bbea01695073e071b",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8692962002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6457740002,
+        "location": {
+          "name": "United States"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks, Inc.",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Field Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8692962002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "FEQ327R691",
+        "title": "Specialist Solutions Architect - Data Engineering & Warehousing (Financial Services) ",
+        "company_name": "Databricks",
+        "first_published": "2026-08-10T14:20:46-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "5d9e342ce0e6063554f4702dde7a730ea9cd5cbeec17f7747d5a7ed06c4a3f46",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6322654002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 4365065002,
+        "location": {
+          "name": "San Francisco, California"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": null,
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Product"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 6322654002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "P-8",
+        "title": "Sr. Product Manager, Data Engineering",
+        "company_name": "Databricks",
+        "first_published": "2022-08-11T14:18:36-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "c30cf9a7cd8037c2a551b93562f04e37be75c8600fc68d84b16979165c1e2a5f",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7601572002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 5538594002,
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks India Private Limited",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7601572002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "P-375",
+        "title": "Staff Software Engineer - Data Platform",
+        "company_name": "Databricks",
+        "first_published": "2024-08-19T05:43:42-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "c7494b3ce771ead6cfaa6a0eda5d0d9b62f6bf276cb0dc0e7f711dd7f1092be2",
+      "company_board": "databricks",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7652016002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 6008256002,
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks India Private Limited",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7652016002,
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "requisition_id": "P-1348",
+        "title": "Staff Software Engineer (Data Platform)",
+        "company_name": "Databricks",
+        "first_published": "2024-09-23T05:36:33-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "76d57d444c05bdbe0f11487eb210efd14cfa1554c2c5eb5236479d338a6c61d9",
+      "company_board": "airbnb",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://careers.airbnb.com/positions/7998356?gh_jid=7998356",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3468905,
+        "location": {
+          "name": "United States"
+        },
+        "metadata": [
+          {
+            "id": 9245691,
+            "name": "Is this job part of ACC?",
+            "value": false,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 10216612,
+            "name": "Workplace Type",
+            "value": "Remote",
+            "value_type": "single_select"
+          }
+        ],
+        "id": 7998356,
+        "updated_at": "2026-09-18T18:38:21-04:00",
+        "requisition_id": "ONE",
+        "title": "Senior Staff Data Engineer - Data Stewardship",
+        "company_name": "Airbnb",
+        "first_published": "2026-06-10T19:39:45-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "13ccdd16f8c767398c4a3f0b2a616327990f200af26459f69509468466732bf4",
+      "company_board": "stripe",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://stripe.com/jobs/search?gh_jid=8113687",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_required",
+        "internal_job_id": 3514520,
+        "location": {
+          "name": "Singapore"
+        },
+        "metadata": null,
+        "id": 8113687,
+        "updated_at": "2026-09-10T13:11:58-04:00",
+        "requisition_id": "See Opening ID",
+        "title": "Account Executive, Product Sales (Data Pipeline) ",
+        "company_name": "Stripe",
+        "first_published": "2026-08-19T11:55:47-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "d6a12c68fccf12758c8d3c542330cc76dc176f1c0ffe088836aae21ca2a3ab67",
+      "company_board": "stripe",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://stripe.com/jobs/search?gh_jid=7761694",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_required",
+        "internal_job_id": 3400454,
+        "location": {
+          "name": "Seattle"
+        },
+        "metadata": null,
+        "id": 7761694,
+        "updated_at": "2026-09-10T13:11:58-04:00",
+        "requisition_id": "See Opening ID",
+        "title": "Software Engineer, Product Security Data Platforms",
+        "company_name": "Stripe",
+        "first_published": "2026-03-31T18:20:49-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "8d7027ffc376520d616a1913721599805601924d2c8ea85b6e13061144c0f0b5",
+      "company_board": "stripe",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://stripe.com/jobs/search?gh_jid=8209970",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_required",
+        "internal_job_id": 3553102,
+        "location": {
+          "name": "Bangalore"
+        },
+        "metadata": null,
+        "id": 8209970,
+        "updated_at": "2026-09-21T07:18:26-04:00",
+        "requisition_id": "See Opening ID",
+        "title": "Software Engineer, Stripe Data Pipeline",
+        "company_name": "Stripe",
+        "first_published": "2026-09-21T07:18:26-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "2d147e45da4779c461db3645ab89d11b62ee53993d8de9ed43dc90f1bb36854a",
+      "company_board": "stripe",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://stripe.com/jobs/search?gh_jid=8112043",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_optional",
+        "internal_job_id": 3474249,
+        "location": {
+          "name": "Toronto"
+        },
+        "metadata": null,
+        "id": 8112043,
+        "updated_at": "2026-09-21T10:21:21-04:00",
+        "requisition_id": "See Opening ID",
+        "title": "Staff Software Engineer, Risk Data Engineering",
+        "company_name": "Stripe",
+        "first_published": "2026-08-06T10:27:44-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "63f4d91c668b710b5ed175d0372056051e641b77a5b4f354cddae6f3f2064387",
+      "company_board": "pinterest",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7683981",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": true
+          }
+        ],
+        "internal_job_id": 3379323,
+        "location": {
+          "name": "San Francisco, CA, US; Remote, US"
+        },
+        "metadata": [
+          {
+            "id": 5955,
+            "name": "Employment Type",
+            "value": "Regular",
+            "value_type": "single_select"
+          },
+          {
+            "id": 16373425,
+            "name": "Career Track",
+            "value": "Individual Contributor",
+            "value_type": "single_select"
+          },
+          {
+            "id": 61175930,
+            "name": "Careers Page Department",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7683981,
+        "updated_at": "2026-09-16T14:51:43-04:00",
+        "requisition_id": "R0006514",
+        "title": "Principal Engineer, Big Data Platform",
+        "company_name": "Pinterest",
+        "first_published": "2026-09-02T12:50:22-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "2c537138e6c7acba5d60c10b77ab5c2b0c0a105c72f496bc30b0bd793aaad6a4",
+      "company_board": "pinterest",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7782546",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": true
+          }
+        ],
+        "internal_job_id": 3405983,
+        "location": {
+          "name": "San Francisco, CA, US; Remote, US"
+        },
+        "metadata": [
+          {
+            "id": 5955,
+            "name": "Employment Type",
+            "value": "Regular",
+            "value_type": "single_select"
+          },
+          {
+            "id": 16373425,
+            "name": "Career Track",
+            "value": "Individual Contributor",
+            "value_type": "single_select"
+          },
+          {
+            "id": 61175930,
+            "name": "Careers Page Department",
+            "value": [
+              "Engineering",
+              "tvScientific"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7782546,
+        "updated_at": "2026-09-16T14:51:43-04:00",
+        "requisition_id": "R0007142",
+        "title": "Software Engineer II, Big Data, tvScientific",
+        "company_name": "Pinterest",
+        "first_published": "2026-05-28T05:45:02-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "b2763fad6a7ab6c6876d10ad90002d97477f164039a83edcc4489ce806a99a40",
+      "company_board": "pinterest",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7494956",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": true
+          }
+        ],
+        "internal_job_id": 3324799,
+        "location": {
+          "name": "Palo Alto; Seattle, WA; New York, NY; San Francisco, CA, US; Remote, US"
+        },
+        "metadata": [
+          {
+            "id": 5955,
+            "name": "Employment Type",
+            "value": "Regular",
+            "value_type": "single_select"
+          },
+          {
+            "id": 16373425,
+            "name": "Career Track",
+            "value": "Individual Contributor",
+            "value_type": "single_select"
+          },
+          {
+            "id": 61175930,
+            "name": "Careers Page Department",
+            "value": [
+              "Engineering"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7494956,
+        "updated_at": "2026-09-16T14:51:43-04:00",
+        "requisition_id": "R0006398",
+        "title": "Sr. Staff Software Engineer, Big Data Platform",
+        "company_name": "Pinterest",
+        "first_published": "2026-08-25T19:38:08-04:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    },
+    {
+      "dedup_fingerprint": "d6891cc42ab413270a46f540328587330e70250f8547300bc16350a35f5abb23",
+      "company_board": "pinterest",
+      "source": "greenhouse_public_ats",
+      "ingested_at_utc": "2026-09-22T16:28:57.908876+00:00",
+      "raw_payload": {
+        "absolute_url": "https://www.pinterestcareers.com/jobs/?gh_jid=7642253",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": true
+          }
+        ],
+        "internal_job_id": 3367955,
+        "location": {
+          "name": "San Francisco, CA, US; Remote, US"
+        },
+        "metadata": [
+          {
+            "id": 5955,
+            "name": "Employment Type",
+            "value": "Regular",
+            "value_type": "single_select"
+          },
+          {
+            "id": 16373425,
+            "name": "Career Track",
+            "value": "Individual Contributor",
+            "value_type": "single_select"
+          },
+          {
+            "id": 61175930,
+            "name": "Careers Page Department",
+            "value": [
+              "Engineering",
+              "tvScientific"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 7642253,
+        "updated_at": "2026-09-16T14:51:43-04:00",
+        "requisition_id": "R0006705",
+        "title": "Staff Software Engineer, Big Data, tvScientific",
+        "company_name": "Pinterest",
+        "first_published": "2026-02-25T03:53:48-05:00",
+        "language": "en",
+        "application_deadline": null
+      }
+    }
+  ]
+}
