@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source_pipeline": "regional_de_ats_ingestion",
-    "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+    "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
     "record_count": 6,
     "companies_scanned": [
       "PubMatic",
@@ -23,7 +23,7 @@
       "dedup_fingerprint": "aa10d1d67fa199646ca610b8a3a8817da1096b131fe6d303e045182779799739",
       "company_board": "databricks",
       "source": "greenhouse",
-      "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+      "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
       "raw_payload": {
         "id": 8290810002,
         "title": "Director of Engineering (Data Infrastructure)",
@@ -40,7 +40,7 @@
       "dedup_fingerprint": "88da7804900e53b3d1e5ee890e7efc9c620ce030553927b028114c33eff1c09c",
       "company_board": "databricks",
       "source": "greenhouse",
-      "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+      "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
       "raw_payload": {
         "id": 8407895002,
         "title": "Senior Manager - Technical Solutions (Big Data / AI)",
@@ -57,7 +57,7 @@
       "dedup_fingerprint": "67e033206bf5f9436aa8d735e636436c69dbfe7d1828e8c493cbb8b20a9c723b",
       "company_board": "databricks",
       "source": "greenhouse",
-      "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+      "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
       "raw_payload": {
         "id": 7601580002,
         "title": "Senior Software Engineer - Data Platform",
@@ -74,7 +74,7 @@
       "dedup_fingerprint": "c11fb104545339ce65ff225630d301d2fb563721f2d8218aaf9b50338835e73a",
       "company_board": "databricks",
       "source": "greenhouse",
-      "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+      "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
       "raw_payload": {
         "id": 7647369002,
         "title": "Senior Software Engineer (Data Platform)",
@@ -91,7 +91,7 @@
       "dedup_fingerprint": "c16cfcd0ba96b16fdbada6e4d27ffb714726bd06434c4c8c4f7358552ab09eaf",
       "company_board": "databricks",
       "source": "greenhouse",
-      "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+      "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
       "raw_payload": {
         "id": 7601572002,
         "title": "Staff Software Engineer - Data Platform",
@@ -108,7 +108,7 @@
       "dedup_fingerprint": "30c691bc02f2d03b49ac269bb20314d7ebdbd67b3b1d81968e1aa01d08af7ee7",
       "company_board": "databricks",
       "source": "greenhouse",
-      "ingested_at_utc": "2026-09-27T11:11:03.524119+00:00",
+      "ingested_at_utc": "2026-09-27T17:52:38.417460+00:00",
       "raw_payload": {
         "id": 7652016002,
         "title": "Staff Software Engineer (Data Platform)",
