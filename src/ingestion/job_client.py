@@ -1,105 +1,185 @@
 import hashlib
-import json
 from datetime import datetime, timezone
-from pathlib import Path
+import json
+import logging
+import os
+import re
 from typing import Any, Dict, List
 import requests
 
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
+logger = logging.getLogger(__name__)
 
-class PublicJobIngestor:
-    """Ingests real Data Engineering postings from public company ATS endpoints into Bronze staging."""
+# Target roles for Data Engineering
+TARGET_ROLE_KEYWORDS = [
+    "data engineer",
+    "data platform",
+    "pyspark",
+    "databricks",
+    "big data",
+    "etl",
+    "data warehouse",
+    "analytics engineer",
+    "data infrastructure",
+]
 
-    COMPANIES = [
-        "gitlab",
-        "canonical",
-        "elastic",
-        "cloudflare",
-        "databricks",
-        "airbnb",
-        "stripe",
-        "reddit",
-        "pinterest",
-        "cockroachlabs",
-        "mongodb"
-        ]
+# Preferred locations
+TARGET_LOCATIONS = [
+    "navi mumbai",
+    "mumbai",
+    "thane",
+    "pune",
+    "india",
+    "remote",
+    "hybrid",
+]
 
-    def __init__(self, output_dir: str = "data/bronze"):
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(parents=True, exist_ok=True)
-        self.session = requests.Session()
+# High-volume Greenhouse companies with India/Remote engineering hubs
+GREENHOUSE_TARGETS = [
+    "pubmatic",  # Major engineering center in Pune
+    "avalara",  # Significant Pune operations
+    "elastic",  # Pune & Remote India
+    "thoughtworks",  # Pune / Mumbai
+    "fractal",  # Mumbai / Pune / Remote
+    "databricks",  # India Remote / Bangalore
+    "stripe",  # India Remote
+    "canonical",  # Global Remote (Hire in India)
+    "gitlab",  # 100% Remote India
+]
 
-    def _generate_fingerprint(self, company: str, title: str, location: str) -> str:
-        """Deterministic SHA-256 hash to deduplicate jobs across daily pipeline runs."""
-        raw_key = f"{company.strip().lower()}|{title.strip().lower()}|{location.strip().lower()}"
-        return hashlib.sha256(raw_key.encode("utf-8")).hexdigest()
+# Lever companies hiring Data Engineers in India
+LEVER_TARGETS = [
+    "atlan",  # Modern Data Workspace (Remote / India)
+    "browserstack",  # Mumbai Tech Hub
+    "clevertap",  # Mumbai Data Platform
+]
 
-    def fetch_company_jobs(self, company: str) -> List[Dict[str, Any]]:
-        """Fetches public postings directly from official Greenhouse ATS feed."""
-        url = f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
-        try:
-            response = self.session.get(url, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-            return data.get("jobs", [])
-        except requests.exceptions.RequestException as exc:
-            print(f"[WARN] Failed to fetch jobs for {company}: {exc}")
-            return []
 
-    def run_ingestion(self) -> Path:
-        """Collects postings, filters for Data/Python roles, and stages to Bronze layer."""
-        ingested_at = datetime.now(timezone.utc).isoformat()
-        all_raw_jobs: List[Dict[str, Any]] = []
+def generate_fingerprint(
+    company: str, external_id: str, title: str, location: str
+) -> str:
+  raw = f"{company.strip().lower()}|{str(external_id).strip()}|{title.strip().lower()}|{location.strip().lower()}"
+  return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
-        target_role_patterns = [
-            "data engineer",
-            "data platform",
-            "data infrastructure",
-            "analytics engineer",
-            "pyspark",
-            "big data",
-            "etl",
-            "data pipeline",
-            "python developer",
-            "database engineer",
-        ]
 
-        print("[INFO] Starting raw ingestion from public endpoints...")
-        for comp in self.COMPANIES:
-            jobs = self.fetch_company_jobs(comp)
-            print(f"[INFO] Fetched {len(jobs)} total openings from {comp.title()}")
-            for j in jobs:
-                title = j.get("title", "").lower()
-                if any(role in title for role in target_role_patterns):
-                    loc = j.get("location", {}).get("name", "Unknown")
-                    fingerprint = self._generate_fingerprint(comp, j.get("title", ""), loc)
-                    all_raw_jobs.append({
-                        "dedup_fingerprint": fingerprint,
-                        "company_board": comp,
-                        "source": "greenhouse_public_ats",
-                        "ingested_at_utc": ingested_at,
-                        "raw_payload": j,
-                    })
+def is_data_engineering_role(title: str) -> bool:
+  title_lower = title.lower()
+  return any(kw in title_lower for kw in TARGET_ROLE_KEYWORDS)
 
-        batch_envelope = {
-            "metadata": {
-                "source_pipeline": "job_market_bronze_ingestion",
-                "ingested_at_utc": ingested_at,
-                "record_count": len(all_raw_jobs),
-                "companies_scanned": self.COMPANIES,
+
+def is_target_location(location_name: str) -> bool:
+  if not location_name:
+    return True
+  loc_lower = location_name.lower()
+  return any(target in loc_lower for target in TARGET_LOCATIONS)
+
+
+def fetch_greenhouse_jobs(board_token: str) -> List[Dict[str, Any]]:
+  url = f"https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs"
+  headers = {"User-Agent": "JobMarketPipeline/2.0 (DataEngineeringTracker)"}
+  try:
+    resp = requests.get(url, headers=headers, timeout=12)
+    if resp.status_code == 200:
+      return resp.json().get("jobs", [])
+  except Exception as e:
+    logger.warning(f"Greenhouse board {board_token} error: {e}")
+  return []
+
+
+def fetch_lever_jobs(site_token: str) -> List[Dict[str, Any]]:
+  url = f"https://api.lever.co/v0/postings/{site_token}?mode=json"
+  headers = {"User-Agent": "JobMarketPipeline/2.0 (DataEngineeringTracker)"}
+  try:
+    resp = requests.get(url, headers=headers, timeout=12)
+    if resp.status_code == 200:
+      return resp.json()
+  except Exception as e:
+    logger.warning(f"Lever board {site_token} error: {e}")
+  return []
+
+
+def run_targeted_ingestion() -> Dict[str, Any]:
+  now_utc = datetime.now(timezone.utc).isoformat()
+  matched_records = []
+
+  # 1. Ingest Greenhouse Boards
+  for board in GREENHOUSE_TARGETS:
+    jobs = fetch_greenhouse_jobs(board)
+    for j in jobs:
+      title = j.get("title", "")
+      loc = j.get("location", {}).get("name", "")
+      if is_data_engineering_role(title) and is_target_location(loc):
+        fingerprint = generate_fingerprint(board, str(j.get("id")), title, loc)
+        matched_records.append({
+            "dedup_fingerprint": fingerprint,
+            "company_board": board,
+            "source": "greenhouse",
+            "ingested_at_utc": now_utc,
+            "raw_payload": {
+                "id": j.get("id"),
+                "title": title,
+                "company_name": board.capitalize(),
+                "location": {"name": loc},
+                "absolute_url": j.get("absolute_url"),
+                "updated_at": j.get("updated_at") or now_utc,
+                "first_published": j.get("first_published") or now_utc,
             },
-            "records": all_raw_jobs,
-        }
+        })
 
-        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        output_file = self.output_dir / f"bronze_jobs_{date_str}.json"
+  # 2. Ingest Lever Boards
+  for site in LEVER_TARGETS:
+    jobs = fetch_lever_jobs(site)
+    for j in jobs:
+      title = j.get("text", "")
+      loc = j.get("categories", {}).get("location", "Remote")
+      if is_data_engineering_role(title) and is_target_location(loc):
+        ext_id = j.get("id", "")
+        fingerprint = generate_fingerprint(site, ext_id, title, loc)
+        matched_records.append({
+            "dedup_fingerprint": fingerprint,
+            "company_board": site,
+            "source": "lever",
+            "ingested_at_utc": now_utc,
+            "raw_payload": {
+                "id": int(hashlib.md5(ext_id.encode()).hexdigest()[:8], 16),
+                "title": title,
+                "company_name": site.capitalize(),
+                "location": {"name": loc},
+                "absolute_url": j.get("hostedUrl"),
+                "updated_at": now_utc,
+                "first_published": now_utc,
+            },
+        })
 
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(batch_envelope, f, indent=2, ensure_ascii=False)
+  logger.info(
+      f"Discovered {len(matched_records)} targeted Data Engineering"
+      " opportunities."
+  )
 
-        print(f"[SUCCESS] Staged {len(all_raw_jobs)} matching records into: {output_file}")
-        return output_file
+  envelope = {
+      "metadata": {
+          "source_pipeline": "enterprise_ats_ingestion",
+          "ingested_at_utc": now_utc,
+          "record_count": len(matched_records),
+          "companies_scanned": GREENHOUSE_TARGETS + LEVER_TARGETS,
+      },
+      "records": matched_records,
+  }
+  return envelope
 
 
 if __name__ == "__main__":
-    ingestor = PublicJobIngestor()
-    ingestor.run_ingestion()
+  data = run_targeted_ingestion()
+  today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+  output_dir = os.path.join(
+      os.path.dirname(__file__), "..", "..", "data", "bronze"
+  )
+  os.makedirs(output_dir, exist_ok=True)
+  output_file = os.path.join(output_dir, f"bronze_jobs_{today_str}.json")
+
+  with open(output_file, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2)
+
+  print(f"[SUCCESS] Staged {len(data['records'])} matching roles to Bronze.")
