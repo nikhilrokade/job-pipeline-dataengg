@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "source_pipeline": "regional_de_ats_ingestion",
+    "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+    "record_count": 11,
+    "companies_scanned": [
+      "PubMatic",
+      "Avalara",
+      "Thoughtworks",
+      "Elastic",
+      "Fractal Analytics",
+      "Databricks",
+      "Canonical",
+      "GitLab",
+      "Atlan",
+      "CleverTap",
+      "BrowserStack",
+      "Razorpay"
+    ]
+  },
+  "records": [
+    {
+      "dedup_fingerprint": "aa10d1d67fa199646ca610b8a3a8817da1096b131fe6d303e045182779799739",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8290810002,
+        "title": "Director of Engineering (Data Infrastructure)",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8290810002",
+        "updated_at": "2026-09-21T13:22:12-04:00",
+        "first_published": "2025-11-13T17:13:22-05:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "88da7804900e53b3d1e5ee890e7efc9c620ce030553927b028114c33eff1c09c",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8407895002,
+        "title": "Senior Manager - Technical Solutions (Big Data / AI)",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8407895002",
+        "updated_at": "2026-10-06T06:16:27-04:00",
+        "first_published": "2026-02-18T12:27:40-05:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "c11fb104545339ce65ff225630d301d2fb563721f2d8218aaf9b50338835e73a",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 7647369002,
+        "title": "Senior Software Engineer (Data Platform)",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7647369002",
+        "updated_at": "2026-11-03T13:02:32-05:00",
+        "first_published": "2024-09-23T05:35:11-04:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "df2c059510c67e41207163b1be2ddd0372b7a4c4d74e157affbfeb8bc7431d75",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8924868002,
+        "title": "Sr. Software Engineer- Databricks AI",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8924868002",
+        "updated_at": "2026-11-06T00:50:17-05:00",
+        "first_published": "2026-11-02T00:01:00-05:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "1129c9fa047854474288565e1d5257a65c72ac9646bb9d1775e6578135471c35",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8926498002,
+        "title": "Staff Software Engineer- Databricks AI",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8926498002",
+        "updated_at": "2026-11-06T00:50:19-05:00",
+        "first_published": "2026-11-02T00:02:35-05:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "c16cfcd0ba96b16fdbada6e4d27ffb714726bd06434c4c8c4f7358552ab09eaf",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 7601572002,
+        "title": "Staff Software Engineer - Data Platform",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7601572002",
+        "updated_at": "2026-11-03T13:03:13-05:00",
+        "first_published": "2024-08-19T05:43:42-04:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "30c691bc02f2d03b49ac269bb20314d7ebdbd67b3b1d81968e1aa01d08af7ee7",
+      "company_board": "databricks",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 7652016002,
+        "title": "Staff Software Engineer (Data Platform)",
+        "company_name": "Databricks",
+        "location": {
+          "name": "Bengaluru, India"
+        },
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7652016002",
+        "updated_at": "2026-11-03T13:02:36-05:00",
+        "first_published": "2024-09-23T05:36:33-04:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "82b8cbd5340c1a4b3469e3342e6192913fa284ff6ddec5245987f5f04b8f1582",
+      "company_board": "gitlab",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8883003002,
+        "title": "Director, Analytics Engineering ",
+        "company_name": "GitLab",
+        "location": {
+          "name": "Remote, Canada; Remote, United States"
+        },
+        "absolute_url": "https://job-boards.greenhouse.io/gitlab/jobs/8883003002",
+        "updated_at": "2026-11-06T15:25:07-05:00",
+        "first_published": "2026-10-13T10:52:13-04:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "1755a5b9b2b090b7c5b94ed919e69213764eda248badcdd3401c1e1a1ea0358c",
+      "company_board": "gitlab",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8773028002,
+        "title": "Intermediate Backend Engineer, Pipeline Authoring",
+        "company_name": "GitLab",
+        "location": {
+          "name": "Remote, Poland"
+        },
+        "absolute_url": "https://job-boards.greenhouse.io/gitlab/jobs/8773028002",
+        "updated_at": "2026-11-09T16:32:16-05:00",
+        "first_published": "2026-09-09T10:16:04-04:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "9e277fe6cb44caba099407777fba3bafc73500cccd0f73d3c1563194aaf80985",
+      "company_board": "gitlab",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8924923002,
+        "title": "Intermediate Data Engineer",
+        "company_name": "GitLab",
+        "location": {
+          "name": "Bangalore, India"
+        },
+        "absolute_url": "https://job-boards.greenhouse.io/gitlab/jobs/8924923002",
+        "updated_at": "2026-11-06T15:25:07-05:00",
+        "first_published": "2026-11-02T01:44:11-05:00"
+      }
+    },
+    {
+      "dedup_fingerprint": "7d7014579d32a72bd5dbc6524e6506263bbef66789ac052573119d639d0f1e17",
+      "company_board": "gitlab",
+      "source": "greenhouse",
+      "ingested_at_utc": "2026-11-10T20:31:01.879991+00:00",
+      "raw_payload": {
+        "id": 8864903002,
+        "title": "Pipeline Programs Manager",
+        "company_name": "GitLab",
+        "location": {
+          "name": "Remote, Canada; Remote, United States"
+        },
+        "absolute_url": "https://job-boards.greenhouse.io/gitlab/jobs/8864903002",
+        "updated_at": "2026-11-06T15:25:07-05:00",
+        "first_published": "2026-10-06T11:20:33-04:00"
+      }
+    }
+  ]
+}
